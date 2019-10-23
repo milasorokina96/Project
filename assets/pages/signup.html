@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="../style/signup.css">
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__section">
+				<a href="index.html" class="header__link">
+					<svg class="logo" width="48" height="47" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M31.578 44.0701L44 17.5774L31.578 44.0701Z" fill="white"/>
+						<path d="M4 17.5774L16.5 44.0701M16.5 44.0701H4L24 5L44 44.0701H31.578M16.5 44.0701L24 21.859L31.578 44.0701M31.578 44.0701L44 17.5774" stroke="black" stroke-width="4"/>
+					</svg>
+				</a>
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="../../index.html" class="navigation__link">Home</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Create</a>
+						</li>
+						<li class="navigation__item">
+							<a href="style.html" class="navigation__link">Styles</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Help</a>
+						</li>
+					</ul>
+					<ul class="navigation__list-mobile">
+						<li class="navigation__item-mobile">
+								<img src="../img/burger.png">
+							<ul class="navigation__sublist-mobile">
+								<li class="navigation__subitem-mobile">
+									<a href="#" class="navigation__sublink-mobile">Create</a>
+								</li>
+								<li class="navigation__subitem-mobile">
+									<a href="style.html" class="navigation__sublink-mobile">Styles</a>
+								</li>
+								<li class="navigation__subitem-mobile">
+									<a href="#" class="navigation__sublink-mobile">Help</a>
+								</li>
+								<li class="header__item header__language-mobile">
+									EN
+									<svg width="13" height="10" viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg" class="arrow">
+										<path d="M5.72389 8.04478L1.32486 2.63059C0.793876 1.97708 1.25894 1 2.10097 1H10.899C11.7411 1 12.2061 1.97708 11.6751 2.63059L7.27611 8.04478C6.87592 8.53733 6.12408 8.53733 5.72389 8.04478Z"/>
+									</svg>
+									<ul class="header__sublist">
+										<li class="header__subitem">
+											<a href="#" class="header__sublink">EN</a>
+										</li>
+										<li class="header__subitem">
+											<a href="#" class="header__sublink">DE</a>
+										</li>
+										<li class="header__subitem">
+											<a href="#" class="header__sublink">RU</a>
+										</li>
+										<li class="header__subitem">
+											<a href="#" class="header__sublink">FR</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<ul class="header__list">
+					<li class="header__item header__language">
+						EN
+						<svg width="13" height="10" viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg" class="arrow">
+							<path d="M5.72389 8.04478L1.32486 2.63059C0.793876 1.97708 1.25894 1 2.10097 1H10.899C11.7411 1 12.2061 1.97708 11.6751 2.63059L7.27611 8.04478C6.87592 8.53733 6.12408 8.53733 5.72389 8.04478Z"/>
+						</svg>
+						<ul class="header__sublist">
+							<li class="header__subitem">
+								<a href="#" class="header__sublink">EN</a>
+							</li>
+							<li class="header__subitem">
+								<a href="#" class="header__sublink">DE</a>
+							</li>
+							<li class="header__subitem">
+								<a href="#" class="header__sublink">RU</a>
+							</li>
+							<li class="header__subitem">
+								<a href="#" class="header__sublink">FR</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__item header__mobitem link-active">
+						<a href="signup.html" class="header__link">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<section class="signup">
+					<h2 class="signup__title">Sign Up</h2>
+					<form class="form" name="form" method="post" action="https://mcslayer.com/hillel/post.php">
+						<label for="form__email" class="form__label">
+							<p class="form__title form__title_first">Email</p>
+							<input type="email" name="email" id="form__email" class="form__email form__field" placeholder=" " required>
+						</label>
+						
+						<label for="form__password" class="form__label">
+							<p class="form__title">Password</p>
+							<input type="password" name="password" id="form__password" class="form__password form__field" placeholder=" " required>
+						</label>
+						
+						<label for="form__password2" class="form__label">
+							<p class="form__title">Re-enter password</p>
+							<input type="password" name="password" id="form__password2" class="form__password form__field" placeholder=" " required>
+						</label>
+						
+						<label for="form__name" class="form__label">
+							<p class="form__title">First Name</p>
+							<input type="text" name="name" id="form__name" class="form__name form__field" placeholder=" " required>
+						</label>
+					
+						<label for="form__surname" class="form__label">
+							<p class="form__title">Last Name</p>
+							<input type="text" name="name" id="form__surname" class="form__surname form__field" placeholder=" " required>
+						</label>
+						<div class="agree">
+	   	 					<input type="checkbox" id="agree__checkbox" class="agree__checkbox" checked="checked">
+	    					<label for="agree__checkbox" class="agree__label"></label>
+	    					<p class="agree__text text">Yes, I want to receive news and notifications on my email.</p>
+	  					</div>
+	  					<p class="form__text text">
+	  						If you have an account? 
+	  						<a href="signin.html" class="form__link link">Sign In</a>
+	  					</p>
+						<label for="form__submit" class="form__label">
+							<input type="submit" value="Register" id="form__submit" class="form__submit buttonform">
+						</label>					
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<section class="footer__section">
+					<div class="footer__content">
+						<a href="index.html" class="footer__link footer__link-logo">
+							<svg class="logo" width="48" height="47" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.578 44.0701L44 17.5774L31.578 44.0701Z" fill="white"/>
+								<path d="M4 17.5774L16.5 44.0701M16.5 44.0701H4L24 5L44 44.0701H31.578M16.5 44.0701L24 21.859L31.578 44.0701M31.578 44.0701L44 17.5774" stroke="rgb(255, 255, 255)" stroke-width="4"/>
+							</svg>
+						</a>
+					
+						<p class="footer__text">Let's create a world of adventure with us!</p>
+					</div>
+					<div class="footer__icons">
+						<a href="#" class="footer__link">
+							<img src="../img/face.png" alt="icon facebook" class="footer__icon">
+						</a>
+						<a href="#" class="footer__link">
+							<img src="../img/insta.png" alt="icon instagram" class="footer__icon">
+						</a>
+						<a href="#" class="footer__link">
+							<img src="../img/telega.png" alt="icon telegram" class="footer__icon">
+						</a>
+						<a href="#" class="footer__link">
+							<img src="../img/google.png" alt="icon google+" class="footer__icon">
+						</a>
+					</div>
+				</section>
+				<p class="footer__copyright">© 2019 World of adventure.</p>
+			</div>
+		</footer>
+	</body>
+</html>

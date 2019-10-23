@@ -1,0 +1,108 @@
+@import "general.scss";
+body {
+	@media (max-width: 768px) {
+		background-color: $companyColor;
+	}
+}
+.main {
+	padding-top: 45px;
+	padding-bottom: 230px;
+	background-image: url(../img/cat.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	@media (max-width: 768px) {
+		background-image: none;
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+}
+.signup {
+	background-image: url(../img/cloud3.png);
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+	padding-top: 150px;
+	padding-bottom: 140px;
+	@media (max-width: 768px) {
+		background-image: none;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&__title {
+		text-align: center;
+		font-size: $textSize*1.64;
+		margin-top: 0;
+		margin-bottom: 45px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__text {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		width: $inputWidth;
+		text-align: center;
+	}
+	&__text2 {
+		margin-top: 0;
+	}
+	&__link {
+		font-size: $textSize/1.2;
+	}
+	&__error {
+	    display: none;
+	    position: absolute;
+	}
+}
+.agree {
+	display: flex;
+	width: $inputWidth;
+	margin-top: 40px;
+	@media (max-width: 768px) {
+			width: $inputWidth/1.1;
+	}
+	&__checkbox {
+		display: none;
+		&:checked + .agree__label::before {
+			display: block;
+		}
+	}
+	&__label {
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		margin-right: 10px;
+		border: 3px solid $textColor;
+		position: relative;
+		&:before {
+			display: none;
+			content: '';
+			width: 14px;
+			height: 14px;
+			background-image: url(../img/check.png);
+			background-repeat: no-repeat;
+  			background-size: contain;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);	
+		}
+	}
+	&__text {
+		width: 252px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.social {
+	&__link {
+		text-decoration: none;
+		&:first-child {
+			margin-right: 10px;
+		}
+		
+	}
+}

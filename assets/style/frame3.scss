@@ -1,0 +1,46 @@
+@import "general.scss";
+.frame3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	&__img {
+		padding-top: 340px;
+		@media (max-width: 768px) {
+		padding-top: 0;	
+		}
+	}
+}
+.block {
+	margin-bottom: 175px;
+	text-align: center;
+	width: 637px;
+	height: 340px;
+	background-image: url(../img/cloud.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: 768px) {
+		margin-bottom: 70px;
+		width: 320px;
+		height: 205px;
+	}
+	&__text {
+		margin: 0;
+    	width: 495px;
+		height: 110px;
+   		overflow: auto;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 35px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+			line-height: 21px;
+			width: 220px;
+			height: 90px;
+		}
+	}
+}
